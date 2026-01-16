@@ -173,6 +173,7 @@ public class ProjectController {
       <footer className="landing-footer">
         <p>Built with Spring Boot & React • Powered by Website Carbon API</p>
         <p className="footer-tagline">Making the web greener, one site at a time 🌱</p>
+        <p className="footer-copyright">© 2026 Jeanette Söderman. All rights reserved.</p>
       </footer>
     </div>
   );
