@@ -6,6 +6,8 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-6DB33F?logo=springboot)
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite)
 
+🚀 **[Live Demo](https://green-port-three.vercel.app)** | 💻 **[GitHub Repo](https://github.com/jeanettesoderman/GreenPort)**
+
 A full-stack web application that combines a client portal with real-time sustainability tracking. GreenPort helps businesses monitor and reduce their website's carbon footprint while providing a seamless project management experience.
 
 ## 📸 Screenshots
