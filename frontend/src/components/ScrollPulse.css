@@ -1,0 +1,33 @@
+.scroll-pulse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00FF85, #00FF85 50%, transparent);
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px #00FF85, 0 0 20px #00FF85;
+}
+
+.pulse-glow {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  width: 20px;
+  height: 6px;
+  background: #00FF85;
+  border-radius: 50%;
+  filter: blur(3px);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}

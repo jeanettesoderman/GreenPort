@@ -1,0 +1,335 @@
+/* Simple Login Page */
+
+.simple-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  padding: 2rem;
+  position: relative;
+}
+
+.simple-login-page > div:not(.back-btn):not(.theme-toggle) {
+  width: 100%;
+  max-width: 500px;
+}
+
+.back-btn {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+.back-btn:hover {
+  background: #00FF85;
+  color: #0A0F0B;
+  box-shadow: 0 0 20px rgba(0, 255, 133, 0.4);
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.simple-login-box {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 2px solid #063920;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 255, 133, 0.2), 0 0 10px rgba(0, 255, 133, 0.1);
+}
+
+.simple-login-box h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.demo-btn {
+  width: 100%;
+  padding: 1.25rem;
+  background: transparent;
+  border: 2px solid #063920;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s;
+}
+
+.demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 5px rgba(0, 255, 133, 0.3), 0 0 10px rgba(0, 255, 133, 0.15);
+  background: transparent;
+  border-color: #063920;
+  outline: none;
+}
+
+.demo-btn span {
+  font-size: 2rem;
+}
+
+.demo-btn strong {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.demo-btn small {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.divider {
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.toggle-btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-btns button {
+  flex: 1;
+  padding: 0.75rem;
+  background: transparent;
+  border: 2px solid #063920;
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.toggle-btns button:hover {
+  box-shadow: 0 0 5px rgba(0, 255, 133, 0.3), 0 0 10px rgba(0, 255, 133, 0.15);
+}
+
+.toggle-btns button.active {
+  background: transparent;
+  border-color: #063920;
+  color: #00FF85;
+  font-weight: 600;
+}
+
+form {
+  text-align: left;
+}
+
+.field {
+  margin-bottom: 1.25rem;
+}
+
+.field label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.875rem;
+  background: var(--bg-primary);
+  border: 2px solid #063920;
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.3s;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #00FF85;
+  box-shadow: 0 0 0 3px rgba(0, 255, 133, 0.3);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid #063920;
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 5px rgba(0, 255, 133, 0.3), 0 0 10px rgba(0, 255, 133, 0.15);
+  border-color: #063920;
+}
+
+.notice {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 255, 133, 0.05);
+  border: 1px solid rgba(0, 255, 133, 0.2);
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .simple-login-page {
+    padding: 1.5rem;
+  }
+  
+  .simple-login-box {
+    padding: 2rem;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .simple-login-page {
+    padding: 1rem;
+  }
+  
+  .simple-login-box {
+    padding: 1.5rem;
+  }
+  
+  .simple-login-box h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+  }
+  
+  .back-btn {
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .demo-btn {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+  
+  .demo-btn span {
+    font-size: 1.5rem;
+  }
+  
+  .demo-btn strong {
+    font-size: 1rem;
+  }
+  
+  .demo-btn small {
+    font-size: 0.8rem;
+  }
+  
+  .toggle-btns {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .toggle-btns button {
+    width: 100%;
+    padding: 0.875rem;
+  }
+  
+  .field input {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .submit-btn {
+    padding: 0.875rem;
+    font-size: 0.95rem;
+  }
+  
+  .notice {
+    font-size: 0.75rem;
+    padding: 0.875rem;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .simple-login-page {
+    padding: 0.75rem;
+  }
+  
+  .simple-login-box {
+    padding: 1.25rem;
+  }
+  
+  .simple-login-box h1 {
+    font-size: 1.75rem;
+  }
+  
+  .back-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  
+  .demo-btn {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+  }
+  
+  .demo-btn strong,
+  .demo-btn small {
+    text-align: center;
+  }
+}
