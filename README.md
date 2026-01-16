@@ -222,8 +222,14 @@ This project demonstrates:
 
 ## 💬 Contact
 
-Built as a portfolio project to showcase full-stack development skills and environmental awareness.
+Built by **Jeanette Söderman** as a portfolio project to showcase full-stack development skills and environmental awareness.
+
+👉 **GitHub:** [jeanettesoderman](https://github.com/jeanettesoderman)
 
 ---
 
 **Making the web greener, one site at a time** 🌱
+
+---
+
+© 2026 Jeanette Söderman. All rights reserved.
